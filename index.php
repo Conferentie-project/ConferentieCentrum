@@ -12,7 +12,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<main class="container">
+<main>
     <div class="row">
         <div class="col-12">
             <?php include("./banner.php"); ?>
