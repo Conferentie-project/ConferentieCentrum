@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+.imgcontainer img{
+    height: 100%;
+    width: auto;
+}
+
+.imgcontainer{
+    height: 40vh;
+    width: auto;
+    text-align: left;
+}
