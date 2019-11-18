@@ -26,7 +26,7 @@
     <div class="row">
         <div class="col-12">
             <section class="content">
-                <?php include("./pageloader.php"); ?>
+                <?php include("./navigation.php"); ?>
             </section>
         </div>
     </div>
