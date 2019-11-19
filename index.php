@@ -29,9 +29,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <section class="content">
                     <?php include("./navigation.php"); ?>
-                </section>
             </div>
         </div>
         <div class="row">
