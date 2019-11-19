@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="col-sm">
-        IMAGES hiero a neef
+      <p class="lead"><img src="./img/home.jpg" href="./index.php?content=home" class="responsive"></p>
       </div>
     </div>
   </div>
