@@ -1,1 +1,1 @@
-<img src="./img/banner.png" href="./index.php?content=home" class="responsive">
+<img src="../img/banner.jpg" alt="banner" class="responsive">

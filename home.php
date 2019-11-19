@@ -1,6 +1,6 @@
 <h1 class="display-4"></h1>
 
-<main class="container">
+<main >
   <br>
   <div>
     <div class="row">

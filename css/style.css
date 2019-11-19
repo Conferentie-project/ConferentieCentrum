@@ -1,5 +1,5 @@
-body{
-    background-image: url('../img/background.jpg');
+  .body{
+    background-image: url('../img/background.png');
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -19,33 +19,24 @@ body{
   
   .footer{
   
-      background-color:   rgb(255, 255, 255);
+      background-color: rgb(255, 255, 255);
       min-height: 2vh;
       padding: 2em;
       margin-top: 2em;
   }
-  
-  .carousel {
-    margin: auto;
-  }
-  
-  .jumbotron{
-    height:100%;
-    width:100%;
-  }
-  
+   
   .responsive {
     width: 100%;
     height: auto;
-  }
+  }  
 
-.navbar {
+  .navbar {
     width: 100%;
-    background-color: #555;
+    background-color: #262E34;
     overflow: auto;
   }
   
-.navbar a {
+  .navbar a {
     float: left;
     text-align: center;
     padding: 12px;
@@ -54,16 +45,16 @@ body{
     font-size: 17px;
   }
   
-.navbar a:hover {
+  .navbar a:hover {
     background-color: #000;
   }
   
-.active {
+  .active {
     background-color: #4CAF50;
   }
   
-@media screen and (max-width: 500px) {
-.navbar a {
+  @media screen and (max-width: 500px) {
+  .navbar a {
       float: none;
       display: block;
     }
