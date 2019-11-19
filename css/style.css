@@ -1,14 +1,52 @@
-h1{
+body{
+    background-image: url('../img/background.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+  
+  .jumbotron{
+      position: relative;
+      background-color: rgb(185, 196, 200);
+      color: rgb(0, 0, 0);
+      text-align: center;
+  }
+  
+  .navbar {
+    background-color: white;
+      text-align: center;    
+      margin-left: center;
+      margin-right: center;
+  }
+  
+  .navlink{
     text-align: center;
-}
-
-.imgcontainer img{
-    height: 100%;
-    width: auto;
-}
-
-.imgcontainer{
-    height: 40vh;
-    width: auto;
-    text-align: left;
-}
+  }
+  
+  .content {
+      color: rgb(255, 255, 255);
+      min-height: 50vh;
+      padding: 2em;
+  }
+  
+  .footer{
+  
+      background-color:   rgb(255, 255, 255);
+      min-height: 2vh;
+      padding: 2em;
+      margin-top: 2em;
+  }
+  
+  .carousel {
+    margin: auto;
+  }
+  
+  .jumbotron{
+    height:100%;
+    width:100%;
+  }
+  
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
