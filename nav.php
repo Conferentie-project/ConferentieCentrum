@@ -7,4 +7,5 @@
   <a href="#"><i class="fa fa-fw fa-map"></i> Contact</a>
   <a href="#"><i class="fa fa-sign-in"></i> Inloggen</a>
   <a href="#"><i class="fa fa-user-plus"></i> Registreren</a>
+  <a href="#"><i class="fa fa-user-plus"></i> uitloggen</a>
   </div>
