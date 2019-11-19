@@ -1,1 +1,1 @@
-<img src="../img/banner.jpg" alt="banner" class="responsive">
+<img src="./img/banner.jpg" alt="banner" class="responsive">
