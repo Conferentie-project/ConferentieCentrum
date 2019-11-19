@@ -1,5 +1,5 @@
   .body{
-    background-image: url('../img/background.jpg');
+    background-image: url('./img/background.jpg');
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -12,7 +12,7 @@
       text-align: center;
   }
   .content {
-      color: rgb(255, 255, 255);
+      background-color: #495762;
       min-height: 50vh;
       padding: 2em;
   }
@@ -32,7 +32,7 @@
 
   .navbar {
     width: 100%;
-    background-color: #262E34;
+    background-color: rgb(38, 45, 51);
     overflow: auto;
   }
   
@@ -46,7 +46,7 @@
   }
   
   .navbar a:hover {
-    background-color: #000;
+    background-color: #495762;
   }
   
   .active {
