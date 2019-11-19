@@ -60,3 +60,13 @@
     }
   }
 
+  .div {
+    padding: 70px;
+    border: 1px solid #4CAF50;
+  }
+
+  .image {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
