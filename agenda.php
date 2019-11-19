@@ -15,7 +15,7 @@
                             </div>
                             <div class="col-sm-8">
                                 <h1>Conferentie Watermanagement</h1><br>
-                                <h5>hutds</h5><br>
+                                <h5></h5><br>
                                 <a href="./index.php?content=watermanagement"><i class="fa fa-fw fa-book"></i>Ga naar evenement</a>
                             </div>
                         </div>
