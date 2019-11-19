@@ -9,36 +9,3 @@
   <a href="./index.php?content=registerform"><i class="fa fa-user-plus"></i> Registreren</a>
 
 </div>
-
-<?php
-
-
-if (isset($_SESSION["iduser"])) {
-  switch ($_SESSION["userrol"]) {
-    case 'administrator':
-      echo '<li class="nav-item">
-          <a class="nav-link" href="./index.php?content=admin_home"><h5>AdminHome<h5><span class="sr-only">(current)</span></a>
-        </li>';
-      break;
-    case 'customer':
-      echo '<li class="nav-item">
-          <a class="nav-link" href="./index.php?content=customer_home"><h5>Mijn Bestellingen<h5><span class="sr-only">(current)</span></a>
-        </li>';
-      break;
-    default:
-      header("Location: url=./index.php?content=logoutform");
-      break;
-  }
-  echo '<li class="nav-item">
-      <a class="nav-link" href="./index.php?content=logoutform"><h5>Uitloggen<h5></a>
-    </li>';
-} else {
-  echo '<li class="nav-item">
-        <a class="nav-link" href="./index.php?content=registerform"><h5>Registreer<h5></a>
-      </li>';
-  echo '<li class="nav-item">
-        <a class="nav-link" href="./index.php?content=loginform"><h5>Inloggen<h5></a>
-      </li>';
-}
-
-?>
