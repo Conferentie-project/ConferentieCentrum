@@ -39,7 +39,7 @@
                             </div>
                             <div class="col-sm-9">
                                 <h1>*Ander evenement*</h1><hr>
-                                <h5>*Hier komt*</h5><br>
+                                <h5>*Komt hier*</h5><br>
                                 <a href="./index.php?content="><i class="fa fa-fw fa-book"></i>Ga naar evenement</a>
                             </div>
                         </div>

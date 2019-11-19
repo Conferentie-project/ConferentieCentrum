@@ -17,18 +17,18 @@
 </head>
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Over ons</h1>
+    <h1 class="display-4">Conferentie info</h1>
 
 
-    <p class="lead">Wij zijn een kleinscalige eWatch verkoper op naast de school MBO Utrecht. <br>
-                    Onze showroom is vrijblijvend open op afspraak en wij zijn vrijdag 09:00 t/m 21:00 uur open.</p>
+    <p class="lead">Wij zijn een grootschalige conferentiecentrum in de Jaarbeurs. <br>
+                    Onze conferentie is vrijblijvend open op afspraak en wij zijn vrijdag 10:00 t/m 22:00 uur open.</p>
                     <br>
                     <br>
-                    <h3> Waarom zou u voor PolarWatch moeten kiezen om uw eWatches te kopen<h3>
+                    <h3>Over het hotel<h3>
 
                     
-                    <h5> PolarWatch verkoopt alleen echte ICE en dit voor FIRE deals. Wij leveren dezelfde dag nog voor 12:00.<br>
-                        Onze eWatches zijn van hoge kwaliteit en wij geven een levenslange garantie aan het product.
+                    <h5> <br>Ibis Utrecht <br> Bizetlaan 1 <br> 3533 KC <br> UTRECHT NEDERLAND
+                     <br> Tel: +31302910366 <br> Fax: (+31)30/2942066 <br> E-mailadres: H0880@accor.com.
   </div>
 </div>
 <body>
