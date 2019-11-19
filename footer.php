@@ -1,5 +1,5 @@
 <section class="footer">
-
+<hr>
     <footer>
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
