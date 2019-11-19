@@ -7,13 +7,16 @@
             <div class="col-sm">
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
-                        <h1 class="display-4">Fluid jumbotron</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="lead"><img src="./img/manpraat.jpg" href="./index.php?content=home" class="responsive"></p>
+                            </div>
+                            <div class="col-sm-8">
+                                <h1>Tester</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm">
-                IMAGES hiero a neef test a neef
             </div>
         </div>
     </div>
