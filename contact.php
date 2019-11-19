@@ -37,7 +37,7 @@
         </div>
         <br>
         <div class="container" id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.8311888935064!2d5.100116815776795!3d52.06459737973053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c665949a3fef4d%3A0xca011327d5e9ac9e!2sMBO+Utrecht+-+Academie+voor+Economie+en+Ondernemen!5e0!3m2!1snl!2snl!4v1540981910149" frameborder="0" style="border:0" id="iframe" allowfullscreen width="100%" height="450 px"></iframe>
+            <iframe src="https://maps.google.com/maps?q=jaarbeurs&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" id="iframe" allowfullscreen width="100%" height="450 px"></iframe>
         </div>
     </main>
 
