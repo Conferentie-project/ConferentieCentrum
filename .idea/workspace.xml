@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844acbea-41f4-4bd0-b95a-0c843dfe55ce" name="Default Changelist" comment="" />
+    <list default="true" id="844acbea-41f4-4bd0-b95a-0c843dfe55ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda.php" beforeDir="false" afterPath="$PROJECT_DIR$/agenda.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +23,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TTHJZbNpr9b0TTNPUFdGcI4oE2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/MBO Utrecht/Arjan de Ruijter - Jens Reimer/Periode-4/BasisPRG" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Arjan de Ruijter - Jens Reimer/Periode-4/BasisPRG" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -51,6 +57,7 @@
       <updated>1573477093116</updated>
       <workItem from="1573477094306" duration="6606000" />
       <workItem from="1574072953806" duration="960000" />
+      <workItem from="1574188107167" duration="266000" />
     </task>
     <servers />
   </component>
@@ -62,7 +69,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
