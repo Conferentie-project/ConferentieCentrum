@@ -34,6 +34,10 @@
                         Mr. Z spreekt op vrijdag xx-xx-xxxx om xx:xx over Lorem ipsum
                         <hr>
                         Mevr. X spreekt op zaterdag xx-xx-xxxx om xx:xx over Lorem ipsum
+                        <hr>
+                        Wilt u zelf ook spreken op dit evenement? Maak dan een account aan en meld je daar aan.
+                        <br>
+                        <a href="./index.php?content=sprekeraanmeld" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Meld je aan!</a>
                     </div>
                 </div>
             </div>
