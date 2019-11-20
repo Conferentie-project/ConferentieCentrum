@@ -13,7 +13,6 @@
                     Welke specifieke deelonderwerpen er worden besproken bij de
                     <br>
                     Conferentie en welke sprekers er komen.
-
                 </div>
                 <div class="col-sm">
                 <img src="./img/watermanagement.jpg" class="image" class="responsive">
@@ -22,5 +21,22 @@
         </div>
     </div>
 
+    <main class="container">
+        <br>
+        <div>
+            <div class="jumbotron jumbotron-fluid">
+                <h1> Sprekers</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-sm">
+                        Mr. X spreekt op Vrijdag xx-xx-xxxx om xx:xx over Lorem ipsum
+                        <hr>
+                        Mr. Z spreekt op vrijdag xx-xx-xxxx om xx:xx over Lorem ipsum
+                        <hr>
+                        Mevr. X spreekt op zaterdag xx-xx-xxxx om xx:xx over Lorem ipsum
+                    </div>
+                </div>
+            </div>
+        </div>
 
 </main>
