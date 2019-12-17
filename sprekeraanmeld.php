@@ -20,7 +20,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Wat wil je vertellen?</label>
-                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="vul in">
+                        <input type="text" name="password" class="form-control" id="exampleInputPassword1" placeholder="vul in">
                     </div>
                     <div class="col-6">
                         <button type="submit" class="btn btn-outline-info btn-lg btn-block">Log in</button>
