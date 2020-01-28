@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844acbea-41f4-4bd0-b95a-0c843dfe55ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sprekeraanmeld.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/watermanagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/watermanagement.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +29,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Arjan de Ruijter - Jens Reimer/Periode-4/BasisPRG" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -62,6 +59,11 @@
       <workItem from="1574072953806" duration="960000" />
       <workItem from="1574188107167" duration="3233000" />
       <workItem from="1574191576357" duration="117000" />
+      <workItem from="1574322191300" duration="842000" />
+      <workItem from="1575028731984" duration="1856000" />
+      <workItem from="1575359282458" duration="1214000" />
+      <workItem from="1575458843157" duration="599000" />
+      <workItem from="1575625198295" duration="45000" />
     </task>
     <servers />
   </component>
