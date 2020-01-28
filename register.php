@@ -68,12 +68,12 @@ if (mysqli_num_rows($result) == 1) {
 
     if ($result) {
         $to = $email;
-        $subject = "Activatielink http://www.polarwatch.org";
+        $subject = "Activatielink http://www.conferentiecentrum.com";
         $message = '<!DOCTYPE html>
     <html>
     <body>
     <h1>Beste klant,<h1>
-    <p>Bedankt voor het registreren, door op onderstaande link te klikken wordt het registratieproces voltooid.</p> <a href="http://www.polarwatch.org/index.php?content=createpassword&id=' . $id . '&pw=' . $password_hash . '"> Activeer uw account.</a>
+    <p>Bedankt voor het registreren, door op onderstaande link te klikken wordt het registratieproces voltooid.</p> <a href="http://www.conferentiecentrum.com/index.php?content=createpassword&id=' . $id . '&pw=' . $password_hash . '"> Activeer uw account.</a>
 
 
     </body>

@@ -13,9 +13,24 @@
                     Welke specifieke deelonderwerpen er worden besproken bij de
                     <br>
                     Conferentie en welke sprekers er komen.
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ticket Kopen</h5>
+                            <p class="card-text">Als u een ticket wilt kopen voor de Conferentie 'Watermanagenment'. Klik dan op de knop hieronder</p>
+                            <a href="./index.php?content=checkout" class="btn btn-primary">Ticket Kopen</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm">
-                <img src="./img/watermanagement.jpg" class="image" class="responsive">
+                    <img src="./img/watermanagement.jpg" class="image" class="responsive">
                 </div>
             </div>
         </div>
@@ -43,4 +58,4 @@
             </div>
         </div>
 
-</main>
+    </main>
