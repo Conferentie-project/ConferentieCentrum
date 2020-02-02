@@ -8,18 +8,15 @@
             <hr>
             <div class="row">
                 <div class="col-sm">
-                    Hier wordt informatie gezet over de Conferentie Watermanagement.
+
                     <br>
-                    Welke specifieke deelonderwerpen er worden besproken bij de
-                    <br>
-                    Conferentie en welke sprekers er komen.
+                    Wil je weten hoe we nu en in de toekomst schoon drinkwater kunnen hebben? 
+                    Of hoe we om moeten gaan met waterproblemen als overstromingen, vervuiling, de zeespiegelstijging, droogte en overbevissing? En wil jij daar oplossingen voor bedenken? 
+
                     
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+
 
                     <div class="card">
                         <div class="card-body">
