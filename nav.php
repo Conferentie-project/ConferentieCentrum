@@ -7,7 +7,7 @@
   <a href="./index.php?content=contact"><i class="fa fa-fw fa-map"></i> Contact</a>
   <a href="./index.php?content=loginform"><i class="fa fa-sign-in"></i> Inloggen</a>
   <a href="./index.php?content=registerform"><i class="fa fa-user-plus"></i> Registreren</a>
-    <a href="./index.php?content=registerform"><i class="fa fa-shopping-cart"></i> Bestelling</a>
+  <a href="./index.php?content=checkout"><i class="fa fa-shopping-cart"></i> Bestelling</a>
 
 </div>
 
