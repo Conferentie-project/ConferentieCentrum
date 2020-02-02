@@ -1,6 +1,44 @@
-<?php 
+<?php
 include('connectdb.php');
 session_start();
+$status = "";
+if (isset($_POST['code']) && $_POST['code'] != "") {
+    $code = $_POST['code'];
+    $result = mysqli_query(
+        $conn,
+        "SELECT * FROM `products` WHERE `code`='$code'"
+    );
+    $row = mysqli_fetch_assoc($result);
+    $name = $row['name'];
+    $description = $row['description'];
+    $code = $row['code'];
+    $price = $row['price'];
+
+    $cartArray = array(
+        $code => array(
+            'name' => $name,
+            'description' => $description,
+            'code' => $code,
+            'price' => $price,
+            'quantity' => 1,
+        )
+    );
+
+    if (empty($_SESSION["shopping_cart"])) {
+        $_SESSION["shopping_cart"] = $cartArray;
+        $status = "<div class='box'>Product is added to your cart!</div>";
+    } else {
+        $array_keys = array_keys($_SESSION["shopping_cart"]);
+        if (in_array($code, $array_keys)) {
+        } else {
+            $_SESSION["shopping_cart"] = array_merge(
+                $_SESSION["shopping_cart"],
+                $cartArray
+            );
+            $status = "<div class='box'>Product is added to your cart!</div>";
+        }
+    }
+}
 ?>
 
 
@@ -35,7 +73,7 @@ session_start();
         </div>
         <div class="row">
             <div class="col-12">
-                    <?php include("./navigation.php"); ?>
+                <?php include("./navigation.php"); ?>
             </div>
         </div>
         <div class="row">

@@ -5,36 +5,44 @@
   <a href="./index.php?content=agenda"><i class="fa fa-fw fa-book"></i> Agenda</a>
   <a href="./index.php?content=info"><i class="fa fa-fw fa-info"></i> Info</a>
   <a href="./index.php?content=contact"><i class="fa fa-fw fa-map"></i> Contact</a>
-  <a href="./index.php?content=checkout"><i class="fas fa-file-invoice-dollar"></i>Bestelling</a>
   <?php
-if (isset($_SESSION["iduser"])) {
-  switch ($_SESSION["userrol"]) {
-    case 'administrator':
-      echo '<li class="nav-item">
+  if (isset($_SESSION["iduser"])) {
+    switch ($_SESSION["userrol"]) {
+      case 'administrator':
+        echo '<li class="nav-item">
                 <a class="nav-link" href="./index.php?content=admin_home"><h5>AdminHome<h5><span class="sr-only">(current)</span></a>
               </li>';
-      break;
-    case 'customer':
-      echo '<li class="nav-item">
+        break;
+      case 'customer':
+        echo '<li class="nav-item">
                 <a class="nav-link" href="./index.php?content=customer_home"><i class="fas fa-chalkboard-teacher"></i> Mijn Bestellingen </a>
               </li>';
-      break;
-    default:
-      header("Location: url=./index.php?content=logoutform");
-      break;
-  }
-  echo '<li class="nav-item">
+        break;
+      default:
+        header("Location: url=./index.php?content=logoutform");
+        break;
+    }
+    echo '<li class="nav-item">
             <a class="nav-link" href="./index.php?content=logoutform"><i class="fas fa-sign-out-alt"></i> Uitloggen</a>
           </li>';
-} else {
-  echo '<li class="nav-item">
+  } else {
+    echo '<li class="nav-item">
               <a class="nav-link" href="./index.php?content=registerform"><i class="fa fa-user-plus"></i> Registreren</a>
             </li>';
-  echo '<li class="nav-item">
+    echo '<li class="nav-item">
               <a class="nav-link" href="./index.php?content=loginform"><i class="fa fa-sign-in"></i> Inloggen</a>
             </li>';
-}
-?>
-
+  }
+  ?>
+  <?php
+  if (!empty($_SESSION["shopping_cart"])) {
+    $cart_count = count(array_keys($_SESSION["shopping_cart"]));
+  ?>
+    <div class="cart_div">
+      <a href="./index.php?content=cart"><img src="img/cart-icon.png" /> Cart<span>
+          <?php echo $cart_count ?></span></a>
+    </div>
+  <?php
+  }
+  ?>
 </div>
-

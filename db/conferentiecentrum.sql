@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 13, 2020 at 07:47 PM
--- Server version: 5.7.23
--- PHP Version: 7.2.10
+-- Gegenereerd op: 02 feb 2020 om 23:22
+-- Serverversie: 10.4.10-MariaDB
+-- PHP-versie: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,23 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `events`
---
-
-DROP TABLE IF EXISTS `events`;
-CREATE TABLE IF NOT EXISTS `events` (
-  `idevent` int(11) NOT NULL,
-  `eventname` varchar(45) DEFAULT NULL,
-  `eventdescription` varchar(45) DEFAULT NULL,
-  `eventtime` varchar(45) DEFAULT NULL,
-  `idsprekers` int(11) DEFAULT NULL,
-  PRIMARY KEY (`idevent`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `order`
+-- Tabelstructuur voor tabel `order`
 --
 
 DROP TABLE IF EXISTS `order`;
@@ -50,34 +34,75 @@ CREATE TABLE IF NOT EXISTS `order` (
   `iduser` int(11) NOT NULL,
   `date` datetime DEFAULT NULL,
   `price` decimal(5,2) DEFAULT NULL,
-  `status` enum('open','sent','on-hold','canceled') DEFAULT NULL,
+  `status` enum('open','succes','on-hold','canceled') DEFAULT NULL,
   PRIMARY KEY (`idorder`),
   KEY `iduser` (`iduser`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `order`
+--
+
+INSERT INTO `order` (`idorder`, `iduser`, `date`, `price`, `status`) VALUES
+(20, 3, '2020-02-03 00:22:01', '310.00', 'open');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orderline`
+-- Tabelstructuur voor tabel `orderline`
 --
 
 DROP TABLE IF EXISTS `orderline`;
 CREATE TABLE IF NOT EXISTS `orderline` (
   `idorderline` int(11) NOT NULL AUTO_INCREMENT,
-  `idorder` int(11) NOT NULL,
-  `idevent` int(11) DEFAULT NULL,
-  `quantity` varchar(50) DEFAULT NULL,
-  `product` varchar(50) DEFAULT NULL,
+  `idorder` int(11) DEFAULT NULL,
+  `idproduct` int(11) DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
   `price` decimal(5,2) DEFAULT NULL,
   PRIMARY KEY (`idorderline`),
-  KEY `idorder_idx` (`idorder`),
-  KEY `idevent_idx` (`idevent`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `idorder` (`idorder`),
+  KEY `idproduct` (`idproduct`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `orderline`
+--
+
+INSERT INTO `orderline` (`idorderline`, `idorder`, `idproduct`, `quantity`, `price`) VALUES
+(13, 20, 4, 1, '310.00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Tabelstructuur voor tabel `products`
+--
+
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE IF NOT EXISTS `products` (
+  `idproduct` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(250) NOT NULL,
+  `description` varchar(400) NOT NULL,
+  `code` varchar(100) NOT NULL,
+  `price` decimal(8,2) NOT NULL,
+  PRIMARY KEY (`idproduct`),
+  UNIQUE KEY `code` (`code`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `products`
+--
+
+INSERT INTO `products` (`idproduct`, `name`, `description`, `code`, `price`) VALUES
+(1, 'Ticket Waterconferentie Vrijdag', 'Dit is een toegangs ticket tot the Waterconferentie op Vrijdag', '1', '100.00'),
+(2, 'Ticket Waterconferentie Zaterdag', 'Dit is een toegangs ticket tot the Waterconferentie op Zaterdag', '2', '100.00'),
+(3, 'Ticket passepartout Waterconferentie', 'Met een \'passepartout\' ticket heeft u toegang tot alle dagen van een conferentie of event', '3', '190.00'),
+(4, 'Lunch', 'Dit geeft u toegang tot een gratis lunch op de bijbehorende conferentie', '4', '10.00'),
+(5, 'Diner', 'Dit geeft u toegang tot een gratis diner ', '5', '15.00');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `users`
 --
 
 DROP TABLE IF EXISTS `users`;
@@ -93,32 +118,26 @@ CREATE TABLE IF NOT EXISTS `users` (
   `city` varchar(255) DEFAULT NULL,
   `userrol` enum('customer','admin') NOT NULL DEFAULT 'customer',
   PRIMARY KEY (`iduser`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users`
+-- Gegevens worden geëxporteerd voor tabel `users`
 --
 
 INSERT INTO `users` (`iduser`, `password`, `firstname`, `lastname`, `email`, `phone`, `address`, `postalcode`, `city`, `userrol`) VALUES
 (1, '13-01-2020 20:27:36xvan', 'Alex', 'van der wel', 'alexvanderwelles@gmail.com', 643027288, '89, driemaster', '3904JR', 'Veenendaal', 'customer'),
-(2, '$2y$10$Mpjfp4gfblaOD0e0KMHP6.wemBueANbiST4dfpxw.fRLcDIAfyCdK', 'test', 'dag', 'testdag1@gmail.com', 612345678, 'Daltonlaan 300', '1234AB', 'Utrecht', 'customer');
+(2, '$2y$10$Mpjfp4gfblaOD0e0KMHP6.wemBueANbiST4dfpxw.fRLcDIAfyCdK', 'test', 'dag', 'testdag1@gmail.com', 612345678, 'Daltonlaan 300', '1234AB', 'Utrecht', 'customer'),
+(3, '$2y$10$WvTK5P9agJkytwzBl1ZgqOXHs6q0fS1KBi07VeaIIaNH7Wgm0qmAq', 'Alex', 'van der wel', 'kaas@gmail.com', 643027288, 'ejawihifa 21', '3904JR', 'Veenendaal', 'customer');
 
 --
--- Constraints for dumped tables
+-- Beperkingen voor geëxporteerde tabellen
 --
 
 --
--- Constraints for table `order`
+-- Beperkingen voor tabel `order`
 --
 ALTER TABLE `order`
   ADD CONSTRAINT `iduser` FOREIGN KEY (`iduser`) REFERENCES `users` (`iduser`) ON DELETE NO ACTION ON UPDATE CASCADE;
-
---
--- Constraints for table `orderline`
---
-ALTER TABLE `orderline`
-  ADD CONSTRAINT `idevent` FOREIGN KEY (`idevent`) REFERENCES `events` (`idevent`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `idorder` FOREIGN KEY (`idorder`) REFERENCES `order` (`idorder`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
