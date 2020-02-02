@@ -1,6 +1,7 @@
 <?php
 $userrol = ['customer', 'administrator', 'root'];
 include("./security.php");
+var_dump($_SESSION);
 ?>
 
 
@@ -20,11 +21,11 @@ $productimplode = implode($productgetfetch);
 $productsub = $productimplode;
 $productid = substr($productsub, 0, 1);
 
-$productnameget = mysqli_query($conn, "SELECT `name` FROM `products` WHERE `id` = '$productid'");
+$productnameget = mysqli_query($conn, "SELECT `name` FROM `products` WHERE `idproduct` = '$productid'");
 $productnamegetfetch = mysqli_fetch_array($productnameget);
 $productnameimplode = implode($productnamegetfetch);
 $productnamesub = $productnameimplode;
-$product = substr($productnamesub, 0, 21);
+$product = substr($productnamesub, 0, 31);
 
 $quantityget = mysqli_query($conn, "SELECT `quantity`  FROM `orderline` WHERE `idorder` = '$orderid'");
 $quantitygetfetch = mysqli_fetch_array($quantityget);
