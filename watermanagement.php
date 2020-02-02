@@ -22,7 +22,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Ticket Kopen</h5>
                             <p class="card-text">Als u een ticket wilt kopen voor de Conferentie 'Watermanagenment'. Klik dan op de knop hieronder</p>
-                            <a href="./index.php?content=checkout" class="btn btn-primary">Ticket Kopen</a>
+                            <a href="./index.php?content=product" class="btn btn-primary">Ticket Kopen</a>
                         </div>
                     </div>
                 </div>
