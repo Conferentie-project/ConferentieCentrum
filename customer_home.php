@@ -59,13 +59,13 @@ $status = substr($statussub, 0, 4);
                                 <td>Order id </td>
                             </div>
                             <div class="col-sm">
-                                <td>Product name</td>
+                                <td>Product naam</td>
                             </div>
                             <div class="col-sm">
                                 <td>Aantal</td>
                             </div>
                             <div class="col-sm">
-                                <td>Price</td>
+                                <td>Prijs</td>
                             </div>
                             <div class="col-sm">
                                 <td>Status</td>
