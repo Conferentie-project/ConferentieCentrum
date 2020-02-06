@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="844acbea-41f4-4bd0-b95a-0c843dfe55ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +15,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ConferentieCentrum" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,6 +68,12 @@
       <workItem from="1575359282458" duration="1214000" />
       <workItem from="1575458843157" duration="599000" />
       <workItem from="1575625198295" duration="45000" />
+      <workItem from="1580198009169" duration="3360000" />
+      <workItem from="1580459830276" duration="24000" />
+      <workItem from="1580667898576" duration="6079000" />
+      <workItem from="1580731001038" duration="142000" />
+      <workItem from="1580734347830" duration="628000" />
+      <workItem from="1580808987094" duration="3838000" />
     </task>
     <servers />
   </component>

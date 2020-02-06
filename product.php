@@ -1,7 +1,7 @@
 
 <br>
 <div class="jumbotron">
-	<h1 class="display-4">Deze Polarwatches zijn in hoge kwaliteit en speciaal voor u bestelt</h1>
+	<h1 class="display-4">Hieronder zult u alle opties vinden over dit evenement:</h1>
 	<hr class="my-4">
 
 	<div class="container">
