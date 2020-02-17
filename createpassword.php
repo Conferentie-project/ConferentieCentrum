@@ -2,7 +2,7 @@
 
 
 ?>
-
+<div class="jumbotron">
 <div class="row">
 
     <div class="col-6">
@@ -25,6 +25,5 @@
 </form>
 
     </div>
-    <div class="col-6"> <img src="./img/3.gif" alt="rose"></div>
-
+</div>
 </div>

@@ -1,7 +1,7 @@
 <?php
 $userrol = ['customer', 'administrator', 'root'];
 include("./security.php");
-var_dump($_SESSION);
+
 ?>
 
 
